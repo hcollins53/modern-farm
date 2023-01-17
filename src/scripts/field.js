@@ -8,7 +8,7 @@ export const addPlant = (seedObject) => {
   } else {
   field.push(seedObject);
   }
-  console.log(field)
+  //console.log(field)
   return field;
 };
 

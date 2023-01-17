@@ -2,7 +2,7 @@ console.log("Welcome to the main module");
 
 import { createPlan } from "./plan.js";
 const yearlyPlan = createPlan();
-console.log(yearlyPlan)
+//console.log(yearlyPlan)
 
 //import { createAsparagus } from "./seeds/asparagus.js"
 
@@ -67,3 +67,8 @@ import { harvestPlants } from './harvester.js';
 let harvest = harvestPlants(plantField)
 //console.log(harvest)
 //console.log(plantField)
+
+import { Catalog } from "./catalog.js";
+
+let parentHTMLElement = document.querySelector(".plant")
+parentHTMLElement.innerHTML = Catalog(harvest)
